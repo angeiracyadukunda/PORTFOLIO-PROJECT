@@ -1,0 +1,52 @@
+img{ width: 150px; /* Set the width of the profile picture */
+    height: 150px; /* Set the height of the profile picture */
+    border-radius: 50%; /* Create a circular shape */
+    border: 2px solid #8f8585; /* Add a border around the image */
+    object-fit: cover; /* Ensure the image fills the defined width and height */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Apply a shadow effect */
+    position: relative;
+    top: 39px;}
+    aside {
+        width: 200px;
+        height: 651px;
+        color: #f2f2f2;
+        float: left;
+        position: relative;
+        background-color: rgb(37, 35, 35);
+    }
+    a{
+        list-style-type:none; /* Remove the default list bullet points */
+        margin: 0;
+        padding: 0;
+        color: #fff; /* Set link text color to white */
+        text-decoration: none; /* Remove underlines from links */
+        font-weight: bold; /* Apply bold font weight to links */
+        padding: 10px 15px;
+        line-height: 2.6;
+      }
+      .icons {
+        display: flex;
+        justify-content: center;
+        font-size: 17px;
+        margin: 0 10px;
+        padding-right: 64px;
+        padding-top: 32px;
+      }
+      a.a{
+        position: relative;
+          top: 20px;
+          left: 40px;
+      }
+    
+    .content{
+     position: relative;
+     top: 149px;
+    }
+    .icons {
+        display: flex;
+        justify-content: center;
+        font-size: 17px;
+        margin: 0 10px;
+        padding-right: 64px;
+        padding-top: 32px;
+      }
