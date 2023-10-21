@@ -1,0 +1,153 @@
+:root{
+    --first--color:#2962ff;
+    --second--color:white;
+    --third--color:black;
+    --fifth--color:#c6d4ff;
+    --linear--back: linear-gradient(to bottom, #2962ff,white); 
+    }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    background: linear-gradient(ghostwhite,#2962ff,white);
+}
+
+body {
+    display: grid;
+    grid-template-columns: auto 1fr; 
+    grid-template-rows: 100px 1fr; 
+    grid-template-areas:
+        "header header"
+        "aside main";
+    height: 100vh;
+}
+header {
+    grid-area: header;
+    background-color: var(--fifth--color);
+    color: var(--first--color);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+aside {
+    grid-area: aside;
+    background-color:var(--first--color);
+    color:var(--second--color);
+    padding: 77px;
+
+    }
+    aside ul {
+        list-style: none; 
+        padding-left: 0; 
+    }
+    aside li {
+        margin-bottom: 21px;
+    }
+    
+    aside a {
+        text-decoration: none; /* Remove underlines from links */
+        color: #fff; 
+        transition: color 0.3s;
+    }
+    aside a:hover {
+        color:var(--third--color); 
+    }
+
+ main {
+    grid-area: main;
+    padding: 20px;
+} 
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    body {
+        grid-template-columns: 1fr; /* Single column for smaller screens */
+        grid-template-rows: 100px 1fr 1fr; /* Header, Main Content, and Aside rows */
+        grid-template-areas:
+            "header"
+            "main"
+            "aside";
+    }
+
+    aside {
+        order: 3; /* Reposition aside below main content for smaller screens */
+    }
+}
+
+/* Style the header icons */
+.header-icons {
+    display: flex;
+    gap: 15px;
+    padding-left: 82rem;
+}
+
+
+.icon {
+    margin-right: 20px;
+    position: relative;
+    top: 17px;
+}
+
+
+/* Style the profile image */
+.profile-image img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.logo img{
+    width: 126px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    right: 90rem;
+}
+
+/* Style the main content area */
+main {
+    grid-area: main;
+    padding: 20px;
+}
+
+/* Style the content container */
+.content-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Style the rectangle */
+.rectangle {
+    width: 252px;
+    height: 285px;
+    border-radius: 4px;
+    background-color: var(--fifth--color);
+    box-shadow: 5px 5px 10px #092981;
+}
+
+
+/* Style the image container */
+.image-container {
+    margin-left: 20px; /* Add spacing between the rectangle and image */
+}
+
+/* Style the profile image */
+.image-container img {
+    width: 100px; /* Adjust the image width as needed */
+    height: auto; /* Maintain the image's aspect ratio */
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    right: 192px;
+    border: 2px solid;
+}
+
+
+
+
+
+ 

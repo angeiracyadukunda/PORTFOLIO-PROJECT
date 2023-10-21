@@ -1,82 +1,95 @@
-
-    body {
-        font-family: Arial, sans-serif; /* Set the font for the entire page */
-        /* background-color:#333 ;  */
-        color:#f2f2f2 ; /* Set the default text color */
-        margin: 0; /* Remove default margin */
-        padding: 0; /* Remove default padding */
-        line-height: 1.6; /* Adjust line height for better readability */
-      }
-      aside {
-        width: 200px;
-        height: 651px;
-        color: #f2f2f2;
-        float: left;
-        position: relative;
-        background-color: rgb(37, 35, 35);
-    }
-img{ width: 150px; /* Set the width of the profile picture */
-    height: 150px; /* Set the height of the profile picture */
-    border-radius: 50%; /* Create a circular shape */
-    border: 2px solid #8f8585; /* Add a border around the image */
-    object-fit: cover; /* Ensure the image fills the defined width and height */
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Apply a shadow effect */
-    position: relative;
-    top: 39px;
-  }
-.right-side {
-    width: 825px; /* Set the width of the right side, adjust as needed */
-    height: 651px; /* Set the height to fill the entire viewport height */
-   background-color:#333; 
-    color:#fff; /* Set the text color for the right side */
-    float: left; 
-    position: relative; 
-    text-align: center!important;
-  }
-  
-a{
-  list-style-type:none; /* Remove the default list bullet points */
-  margin: 0;
-  padding: 0;
-  color: #fff; /* Set link text color to white */
-  text-decoration: none; /* Remove underlines from links */
-  font-weight: bold; /* Apply bold font weight to links */
-  padding: 10px 15px;
-  line-height: 2.6;
+:root{
+  --primary-color:#080808;
+  --bg-black-color:#1E1C22;
+  --font-family-style: 'Poppins', sans-serif;
 }
-.icons {
-  display: flex;
-  justify-content: center;
-  font-size: 17px;
-  margin: 0 10px;
-  padding-right: 64px;
-  padding-top: 32px;
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+scroll-behavior: smooth;
+}
+
+body{
+  max-width:1440px;
+  font-family: var(--font-family-style);
+}
+aside{
+display: flex;
+width: 250px;
+height: 100vh;
+padding: 24px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 35px;
+flex-shrink: 0;
+background: var(--primary-color);
+position: fixed;
+top: 0;
+left: 0;
+}
+aside img{
+width: 132px;
+  height: 132px;
+  flex-shrink: 0;
+  position: relative;
+  top: 8px;
+  border-radius: 50%;
+  /*filter: brightness(50%);  Reduces image brightness to make it darker */
+   border: 5px solid #343a40; 
+    object-fit: cover; /* Ensure the image fills the defined width and height */
+    /* box-shadow: 2px  2px 2px rgba(206, 198, 198, 0.2); */
+}
+#all_main_content{
+ 
+  background-color: var(--bg-black-color);
+  height: 100vh;
+  width: 100vw;
+  padding-left:300px ;
+}
+nav ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all .2s ease;
+  
+}
+nav ul li a:hover {
+  color: #20c997; /* Change link color to gold on hover */
+}
+nav ul{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 21px;
+list-style-type:none;
 }
 a.a{
-  position: relative;
-    top: 20px;
-    left: 40px;
+  font-size: 21px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  align-items: center;
+  position: static;
+}
+.icons{
+  color: white;
+  display: flex;
+  gap: 19px;
+  /* flex-wrap: wrap; */
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
- a:hover {
-  background-color: #555;
- }
-.content{
- position: relative;
- top: 149px;
-}
-button{
-  display: inline-block;
-  position: relative;
-  top: 24px;
-  padding: 10px 20px;
-  background-color: #20c997; /* Button background color */
-  color: #fff; /* Button text color */
-  border: none; /* Remove button border */
-  border-radius: 30px; /* Make the button rounded */
-  text-decoration: none; /* Remove default link underline */
-  font-size: 16px;
-  font-weight: bold;
-  transition: background-color 0.3s; /* Add a smooth background color transition on hover */
-}
+
+
+
+
+
+
+
 

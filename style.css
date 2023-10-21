@@ -1,0 +1,42 @@
+:root{
+    --primary-color:black;
+    --background-color:rgb(51, 224, 143);
+    --third-color:rgb(30, 101, 110);
+}
+
+
+#left-side-container{
+    background-color: var(--primary-color);
+    color: var(--third-color);
+}
+
+#right-side-container{
+    background-color:var(--background-color) ;
+    color:var(--primary-color);
+}
+#one{
+    display: flex;  
+}
+.two {
+    display: flex;
+    flex-direction:column;
+    gap: 24px;  
+}
+#last{
+    display: flex;
+    flex-direction: row;
+}
+
+button{
+    width: 130px;
+    height: 30px;
+}
+main{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--third-color);
+    height: 100vh;
+    
+}
+
